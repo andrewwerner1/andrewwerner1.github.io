@@ -1,0 +1,37 @@
+﻿#banner {text-align:center;}
+
+table tbody td {width : 50%; text-align: center;}
+
+@media all and (max-width: 710px)
+{
+    table tbody td {display:block; width:100%}
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/*.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}*/
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    /*.sticky + .content {
+        padding-top: 60px;
+    }*/
+
+
+/*.nav { background-color : #f7f7f9;  padding-top:0.3em; padding-bottom:0.3em;}
+
+.nav .nav-link { color: #212529;}*/
+
+.background-blue {background-color: #141b2d !important;}
+
+.content-background {background-color: #F9F6F6 !important;}
+
+.navbar a {color: white !important;}
+
+ul {text-align:left !important; padding-left: 40%}
+
+
+.bold-font {font-weight:bold;}
+.normal-font {font-weight:normal;}
