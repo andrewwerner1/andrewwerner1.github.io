@@ -26,6 +26,9 @@ table tbody td {width : 50%; text-align: center;}
 
 .background-blue {background-color: #141b2d !important;}
 
+.font-blue, .font-blue .h2 {color: #141b2d !important; }
+
+
 .content-background {background-color: #F9F6F6 !important;}
 
 .navbar a {color: white !important;}
