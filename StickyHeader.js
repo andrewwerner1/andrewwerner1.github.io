@@ -1,8 +1,21 @@
 // JavaScript source code
 
+//controls the way document responds to bookmark links
+$(document).ready(function(){
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 100
+        }, 500);
+    });
+});
+
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 
+//makes the link associated with section user is viewing bold
 function myFunction() {
 
     if ($(window).scrollTop() >= $('#WhyMargaret').offset().top - 400) {
