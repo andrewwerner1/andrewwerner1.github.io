@@ -1,13 +1,19 @@
 // JavaScript source code
 
-//controls the way document responds to bookmark links
+
 $(document).ready(function(){
+    //controls the way document responds to bookmark links
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
     
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top - 100
+            scrollTop: $($.attr(this, 'href')).offset().top - 175
         }, 500);
+    });
+
+    //when user clicks link in hamburger menu, close menu
+    $('.nav-link').click(function(){
+        $('.navbar-toggler').click();
     });
 });
 
