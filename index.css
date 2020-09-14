@@ -1,13 +1,4 @@
-﻿#banner {text-align:center;}
-
-table tbody td {width : 50%; text-align: center;}
-
-@media all and (max-width: 710px)
-{
-    table tbody td {display:block; width:100%}
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+﻿/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 /*.sticky {
     position: fixed;
     top: 0;
@@ -24,17 +15,36 @@ table tbody td {width : 50%; text-align: center;}
 
 .nav .nav-link { color: #212529;}*/
 
-.background-blue {background-color: #141b2d !important;}
+body { font-family: Arial, Helvetica, sans-serif; font-size: 0.95rem; color: #141b2d; }
+h1, h2, h3, h4, h5 { font-size: 1.3rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin: 0;}
 
-.font-blue, .font-blue .h2 {color: #141b2d !important; }
 
+.navbar-dark {
+    /* background: linear-gradient(#2A2A51,          #2A2A51 0.90rem, 
+                                #FFF    0.90rem,  #FFF    0.95rem, 
+                                #AB2426 0.95rem,  #AB2426); */
+    background-color: #2A2A51;
+    flex-wrap: wrap;
+    padding: 0px;
+}
 
-.content-background {background-color: #F9F6F6 !important;}
+.navbar-dark .navbar-brand { flex-basis: 100%; white-space: inherit; padding: 1rem 1rem 0.3rem 1rem; font-size: 1.45rem; }
+.navbar-dark .navbar-img { position: absolute; right: 0.5rem; top: 0.25rem; }
+.navbar-dark .navbar-nav { background-color: #AB2426; border-top: 1px solid #FFF; width:100%;}
+.navbar-dark .navbar-nav .nav-link { color: #FFF; padding: 0.4em 1em; }
+.navbar-dark .navbar-nav .nav-link.nav-link-active { font-weight: bold; }
 
-.navbar a {color: white !important;}
-
+section {background-color: #F9F6F6; padding: 1rem 1.5rem 1.5rem 1.5rem;}
+section h2 { border-bottom: 1px solid #CCC; padding-bottom: 0.4rem; margin-bottom: 0.6rem; font-weight: bold; }
+table tbody td {width : 50%; text-align: center; vertical-align: top; padding: 0 0.7rem;}
 ul {text-align:left !important; padding-left: 40%}
+section#copyright { background: none; }
 
+@media all and (max-width: 768px)
+{
+    .navbar-toggler { margin: 0.3rem 0.6rem 0.3rem 0;}
+    .navbar-dark .navbar-brand { padding: 0.5rem 0.7rem; font-size: 1.1rem; flex-basis: 65%;}
+    .navbar-dark .navbar-img { display: none;} 
+    table tbody td {display:block; width:100%}
+}
 
-.bold-font {font-weight:bold;}
-.normal-font {font-weight:normal;}

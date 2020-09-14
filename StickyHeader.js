@@ -15,25 +15,22 @@ $(document).ready(function(){
     $('.nav-link').click(function(){
         $('.navbar-toggler').click();
     });
+
+    setActiveNav();
 });
 
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { setActiveNav() };
 
 //makes the link associated with section user is viewing bold
-function myFunction() {
+function setActiveNav() {
+    $('.nav-link').removeClass('nav-link-active');
 
-    if ($(window).scrollTop() >= $('#WhyMargaret').offset().top - 400) {
-        $('a#AboutLink').addClass('normal-font').removeClass('bold-font');
-        $('a#WhyMargaretLink').addClass('bold-font').removeClass('normal-font');
+    if ($(window).scrollTop() <= $('#AboutMargaret').offset().top + 250) {
+        $('a#AboutLink').addClass('nav-link-active');
     }
-    else if ($(window).scrollTop() >= $('#AboutMargaret').offset().top - 200) {
-        $('a#AboutLink').addClass('bold-font').removeClass('normal-font');
-        $('a#WhyMargaretLink').addClass('normal-font').removeClass('bold-font');
+    else if ($(window).scrollTop() <= $('#WhyMargaret').offset().top + 250) {
+        $('a#WhyMargaretLink').addClass('nav-link-active');
     }
-    else {
-        $('a#AboutLink').removeClass('bold-font').addClass('normal-font');
-        $('a#WhyMargaretLink').removeClass('bold-font').addClass('normal-font');
-    };
 }
