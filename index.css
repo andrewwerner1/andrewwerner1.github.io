@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5 { font-size: 1.3rem; font-family: Cambria, Cochin, Georgia, T
 
 .navbar-dark .navbar-brand { flex-basis: 100%; white-space: inherit; padding: 1rem 1rem 0.3rem 1rem; font-size: 1.45rem; }
 .navbar-dark .navbar-img { position: absolute; right: 0.5rem; top: 0.25rem; }
-.navbar-dark .navbar-nav { background-color: #AB2426; border-top: 1px solid #FFF; width:100%;}
+.navbar-dark .navbar-nav { background-color: #AB2426; border-top: 1px solid #FFF; width:100%; height: 3.6em;}
 .navbar-dark .navbar-nav .nav-link { color: #FFF; padding: 0.4em 1em; }
 .navbar-dark .navbar-nav .nav-link.nav-link-active { font-weight: bold; }
 
