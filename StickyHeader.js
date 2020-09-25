@@ -16,21 +16,21 @@ $(document).ready(function(){
         $('.navbar-toggler').click();
     });
 
-    setActiveNav();
+   // setActiveNav();
 });
 
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function () { setActiveNav() };
+//window.onscroll = function () { setActiveNav() };
 
 //makes the link associated with section user is viewing bold
-function setActiveNav() {
-    $('.nav-link').removeClass('nav-link-active');
-
-    if ($(window).scrollTop() <= $('#AboutMargaret').offset().top + 250) {
-        $('a#AboutLink').addClass('nav-link-active');
-    }
-    else if ($(window).scrollTop() <= $('#WhyMargaret').offset().top + 250) {
-        $('a#WhyMargaretLink').addClass('nav-link-active');
-    }
-}
+//function setActiveNav() {
+//    $('.nav-link').removeClass('nav-link-active');
+//
+//    if ($(window).scrollTop() <= $('#AboutMargaret').offset().top + 250) {
+//        $('a#AboutLink').addClass('nav-link-active');
+//    }
+//    else if ($(window).scrollTop() <= $('#WhyMargaret').offset().top + 250) {
+//        $('a#WhyMargaretLink').addClass('nav-link-active');
+//    }
+//}

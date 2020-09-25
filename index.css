@@ -28,6 +28,24 @@ h1, h2, h3, h4, h5 { font-size: 1.3rem; font-family: Cambria, Cochin, Georgia, T
     padding: 0px;
 }
 
+
+
+/*
+.facebook-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.facebook-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+*/
 .navbar-dark .navbar-brand { flex-basis: 100%; white-space: inherit; padding: 1rem 1rem 0.3rem 1rem; font-size: 1.45rem; }
 .navbar-dark .navbar-img { position: absolute; right: 0.5rem; top: 0.25rem; }
 .navbar-dark .navbar-nav { background-color: #AB2426; border-top: 1px solid #FFF; width:100%; height: 3.6em;}
@@ -39,6 +57,16 @@ section h2 { border-bottom: 1px solid #CCC; padding-bottom: 0.4rem; margin-botto
 table tbody td {width : 50%; text-align: center; vertical-align: top; padding: 0 0.7rem;}
 ul {text-align:left !important; padding-left: 40%}
 section#copyright { background: none; }
+
+@media all and (min-width: 500px)
+{
+    .andy-dynamic {height:310px;}
+}
+
+@media all and (min-width:380px) and (max-width:499px)
+{
+    .andy-dynamic {height:210px;}
+}
 
 @media all and (max-width: 768px)
 {
